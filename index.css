@@ -1,0 +1,186 @@
+/*STYLES GENERAUX*/
+
+:root {
+	--main-color: chocolate;
+	--light-color: chocolate;
+}
+
+* {
+	font-family: Avenir, sans-serif;
+	margin: 0px;
+}
+
+body {
+	background-image: linear-gradient(to right, #ededed, #c7c7c7, #a1a1a1, #7e7e7e, #7e7e7e, #a1a1a1, #c7c7c7, #ededed);
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+h2 {
+	color: var(--main-color);
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: var(--light-color);
+}
+
+header {
+	padding: 20px 0px;
+	background-color: black;
+}
+
+header>h1 {
+	width: 80%;
+	color: white;
+	margin: 0 auto;
+}
+
+table {
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+	border: 2px solid black;
+	margin: auto;
+}
+
+table th {
+	text-align: justify;
+}
+
+/*JS*/
+
+.collapsebtn {
+	margin: 20px auto 20px 50px;
+}
+
+.collapsebtn::before {
+	content: "\274D  ";
+}
+
+.collapsebtn::after {
+	content: " \276F";
+}
+
+.active:after {
+	content: " \276E";
+}
+
+.content {
+	transition: max-height 0.2s ease;
+	overflow: hidden;
+}
+
+/*SECTIONS*/
+
+section {
+	display: flex;
+	flex-flow: row-reverse wrap;
+	justify-content: space-evenly;
+	width: 100%;
+	padding-bottom: 20px;
+	margin: 0px auto;
+	border-bottom: 1px solid var(--light-color);
+	background-color: whitesmoke;
+}
+
+div h2 {
+	margin: 20px 0;
+	width: 90%;
+}
+
+section>div {
+	width: 90%;
+}
+
+/*SECTION INFOS*/
+
+.selfie {
+	width: 150px;
+	height: 150px;
+	border: 2px solid #fff;
+	box-shadow: 0px 0px 10px black;
+	border-radius: 50%;
+	margin-top: -20px;
+}
+
+.footer {
+	flex: 0 0 45%;
+}
+
+.social {
+	height: 150px;
+	display: flex;
+	justify-content: space-evenly;
+	align-content: space-evenly;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.social>a>img {
+	width: 40px;
+}
+
+/*SECTION EXP ET FORMATION*/
+
+.exp {
+	border-bottom: 1px solid #bbb;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.exp-info {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.exp-logo {
+	max-width: 100px;
+}
+
+.exp img {
+	width: 100%;
+	float: left;
+	margin-right: 40px;
+}
+
+.smallexp {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+}
+
+.smallexp>div {
+	padding: 5px;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+h4 {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+/*VERSION BUREAU*/
+
+@media (min-width: 980px), print {
+	section {
+		min-width: 980px;
+		max-width: 1100px;
+		width: 80%;
+	}
+	.prez {
+		flex: 0 0 60%;
+	}
+	.contact {
+		flex: 0 0 35%;
+	}
+}
