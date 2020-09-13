@@ -1,0 +1,37 @@
+body {
+	background-image: unset;
+	height: 100%;
+}
+
+table {
+	color: black;
+	background-color: white;
+	border-radius: 10px;
+	border: 2px solid black;
+	margin: auto;
+}
+
+table a {
+	color: black;
+}
+
+header {
+	padding: 10px 0px;
+}
+
+section {
+	border-top: 2px solid lightgrey;
+}
+
+h2 {
+	color: var(--main-color);
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: var(--light-color);
+	text-decoration: unset;
+}
+
+.sectionlast {
+	position: absolute;
+	bottom: 0;
+}
