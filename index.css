@@ -181,6 +181,9 @@ h4 {
 	font-weight: normal;
 }
 
+.prez ul li {
+	margin-bottom: 1px;
+}
 /*VERSION BUREAU*/
 
 @media (min-width: 980px), print {
